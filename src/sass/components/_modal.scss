@@ -4,8 +4,8 @@
     border-radius: 5px;
     color: rgb(51, 51, 51);
     text-align: center;
-    max-height: 620px;
-    max-width: 500px;
+    //height: 60%;
+    width: 60%;
     outline: none;
     padding: 10px;
     color: black;
@@ -23,8 +23,8 @@
     }
 
     textarea {
-        min-height: 200px;
-        min-width: 350px;
+        width: 100%;
+        padding: 10px;
     }
 
     .send {
