@@ -5,6 +5,7 @@ import moment from 'moment'
 import Modal from 'react-modal';
 import { EventAdd_action, modal_action_desactive,Event_clean_select, Eventupdate,Event_Delete} from '../../redux/methodAction';
 
+
 moment.locales("es")
 
 const datestart = moment().minutes(0).seconds(0).add(1,"hours")
@@ -112,9 +113,9 @@ export const CalendarModal = (props) => {
       <h2>{activeEvent ? "Edit register": "New register" }</h2>
       <form autoComplete='off' onSubmit={enviar}>
         <label>Date init</label>
-        <DateTimePicker onChange={Time_init} value={ Info.start  } />
+        <DateTimePicker onChange={Time_init} value={ Info.start  } className="reloj"/>
         <label>Date end</label>
-        <DateTimePicker onChange={Time_end} value={Info.end } minDate={ Info.start  } /> 
+        <DateTimePicker onChange={Time_end} value={Info.end } minDate={ Info.start  } className="reloj"/> 
         <label>Title</label>
         <input type="text" name='title' className='sinborder' placeholder='Enter title' value={Info.title  } onChange={get_value_input }/>
         <label>Description</label>
