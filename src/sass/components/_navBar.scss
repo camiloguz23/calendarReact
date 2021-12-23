@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002973;
+    padding: 10px;
+    color: white;
+
+    p {
+        margin-left: 10px;
+
+    }
+
+    button {
+        margin-right: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: transparent;
+        border: none;
+        color: white;
+
+        @media (hover:hover) {
+            &:hover{
+                background-color: #2196f3;
+                cursor: pointer;
+
+            }
+        }
+
+        &:active {
+            background-color: #2196f3;
+        }
+    }
+
+    .prueba {
+        background-color: l;
+    }
+    
+}
+

@@ -1,0 +1,161 @@
+.model{
+    
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+    color: black;
+    position: absolute;
+    
+    z-index: 2;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        margin-top: 20px;
+    }
+
+    textarea {
+        min-height: 200px;
+        min-width: 350px;
+    }
+
+    .send {
+        background-color: #155db1;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 5px;
+
+        @media (hover:hover) {
+
+            &:hover {
+                cursor: pointer;
+                background-color: #e9791a;
+            }
+            
+        }
+    }
+
+    .delete {
+
+        @media (hover:hover) {
+    
+            &:hover {
+                cursor: pointer;
+                background-color: hsla(0, 100%, 50%, 0.7);
+                color: white;
+            }
+            
+        }
+        
+    }
+}
+
+
+
+
+
+.overlay_modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.268);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.react-datetime-picker{
+
+    input{
+
+        &:focus{
+    
+            outline: none;
+        }
+    }
+}
+
+.react-datetime-picker__wrapper{
+    border: none !important;
+}
+
+.sinborder {
+    border: none; 
+    border-bottom: solid black 1px;
+
+    &:focus{
+
+        outline: none;
+    }
+}
+
+.btn_flap{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 100%;
+    background-color: #002973;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+
+    @media (hover:hover) {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/* Modal */
+/* .ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+} */

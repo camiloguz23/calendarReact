@@ -1,0 +1,79 @@
+.Title {
+    background-color: blue;
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 7px;
+}
+
+hr {
+    border: solid black 1px;
+
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: hsla(210, 100%, 40%, 1);
+        border-radius: 5px;
+        font-size: 25px;
+        box-shadow: 5px 5px 20px 3px black;
+    }
+
+    input {
+        margin: 10px 0;
+        font-size: 25px;
+        border: none;
+        background-color: transparent;
+        border-bottom: solid black 1px;
+        outline: none;
+
+        &::placeholder {
+            color: black;
+        }
+
+        
+    }
+
+    button {
+       margin: 10px 0;
+        font-size: 20px;
+        border-radius: 10px;
+
+        @media  (hover:hover) {
+            
+            &:hover {
+                cursor: pointer;
+                background-color: lightblue;
+            }
+        }
+
+    }
+
+    .change {
+        font-size: 19px;
+        @media (hover:hover) {
+            
+            &:hover {
+                cursor: pointer;
+                color: white;
+                text-decoration-line: underline;
+                
+            }
+        }
+    }
+}
+
+.msg_error{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 7px;
+    background-color: hsla(0, 100%, 50%, 0.6);
+}
