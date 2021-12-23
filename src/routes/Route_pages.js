@@ -8,12 +8,12 @@ export const Route_pages = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={
+                <Route path="/login-register" element={
                     <RoutePublic>
                         <Login/>
                     </RoutePublic>
                 } />
-                <Route path="/calendar" element={<Calendarscreem/>}/>
+                <Route path="/" element={<Calendarscreem/>}/>
             </Routes>
         </>
     )
